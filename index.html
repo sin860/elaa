@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابط Ryo</title>
+    <!-- خطوط بكسلية عربية ولاتينية لأسلوب ماينكرافت -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Tajawal', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* حاوية واجهة ماينكرافت الرئيسية */
+        .card-container {
+            background-color: #212121;
+            border: 4px solid #4a4a4a;
+            outline: 4px solid #000000;
+            width: 100%;
+            max-width: 400px;
+            padding: 35px 20px 25px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        /* اسم المستخدم بأسلوب ماينكرافت */
+        .username {
+            font-family: 'VT323', monospace;
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-shadow: 3px 3px #000;
+        }
+
+        /* النص الفرعي */
+        .subtitle {
+            color: #aaaaaa;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px #000;
+        }
+
+        /* تصميم أزرار ماينكرافت بارزة */
+        .link-btn {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            border: 3px solid #000000;
+            box-shadow: inset 2px 2px 0px rgba(255,255,255,0.3), inset -2px -2px 0px rgba(0,0,0,0.5);
+            transition: transform 0.05s;
+        }
+
+        .link-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* الأزرار المفعّلة الخضراء */
+        .btn-active {
+            background-color: #47a036;
+            color: #ffffff;
+            text-shadow: 2px 2px 0px #000000;
+        }
+
+        .btn-active:hover {
+            background-color: #52b83e;
+        }
+
+        /* الأزرار المغلقة الحمراء */
+        .btn-disabled {
+            background-color: #5c2929;
+            color: #aaaaaa;
+            cursor: not-allowed;
+            text-shadow: 2px 2px 0px #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- العنوان الرئيسي والفرعي -->
+        <h1 class="username">Iraq Ryo</h1>
+        <p class="subtitle">أهلاً لكم في عالمي!</p>
+
+        <!-- الأزرار المفعّلة (الأخضر) -->
+        <a href="https://t.me/Iraq_Ryo/5" target="_blank" class="link-btn btn-active">الباكات</a>
+        <a href="https://www.tiktok.com/@isxrio_?_r=1&_t=ZS-98w7ppSbLY0" target="_blank" class="link-btn btn-active">قناتي التيك توك (isxrio_)</a>
+        <a href="https://t.me/Iraq_Ryo" target="_blank" class="link-btn btn-active">قناتي التلكرام (@Iraq_Ryo)</a>
+
+        <!-- الأزرار المغلقة (الأحمر) -->
+        <a class="link-btn btn-disabled">سيرفر الديسكورد (مغلق)</a>
+        <a class="link-btn btn-disabled">قناتي اليوتيوب (مغلق)</a>
+    </div>
+
+</body>
+</html>
